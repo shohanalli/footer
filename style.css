@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    padding: 30px 5px;
+    color: white;
+    overflow: hidden;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.collam{
+    min-width: 250px;
+    color: white;
+    font-family: sans-serif;
+    padding: 0 2rem;
+
+}
+.collam h3{
+    color: rgb(248, 190, 1);
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.collam h3::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color:rgb(248, 190, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    transition: 0.5s ease;
+}
+.collam h3:hover::after{
+  width: 20%;  
+}
+.collam .social_icon a i {
+    color: rgb(248, 190, 1);
+    margin-top: 20px;
+    margin-right: 10px;
+   font-size: 22px;
+   transition:all 0.5s ease;
+}
+.collam .social_icon a i:hover{
+color: white;
+}
+.collam .logo{
+ width: 150px;
+ margin-bottom: 25px;
+ background-color: rgb(248, 190, 1);
+}
+.collam .link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+    position: relative;
+    font-size: 17px;
+}
+.collam .link a:before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    background-color:rgb(248, 190, 1);
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    transition: 0.5s ease; 
+    opacity: 0;
+}
+.collam .link a:hover::before{
+    opacity: 1; 
+   
+}
+.collam .link a:hover{
+    transform: translateX(-10px);
+    color: rgb(248, 190, 1);
+    
+}
+.collam .contact_details{
+    display: flex;
+    margin-bottom: 20px;
+  
+}
+.collam .contact_details i {
+   margin-right: 10px;
+ 
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.row .form input{
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid rgb(248, 190, 1);
+    border-radius: 5px;
+}
+.form button{
+    background-color: rgb(248, 190, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media(max-width:1000px){
+    
+    .row{
+        flex-direction: column;
+
+    }
+    .collam{
+        margin: auto;
+        width: 50%;
+        margin-bottom: 25px;
+        text-align: center;
+     
+    }
+    .contact_details{
+        text-align: center;
+        margin: auto;
+        width: 60%;
+    }
+    .collam .link a:before{
+        content: '';
+        height: 16px;
+        width: 3px;
+        background-color:rgb(248, 190, 1);
+        position: absolute;
+        top: 0px;
+        left: 100px;
+        transition: 0.5s ease; 
+        opacity: 0;
+    } 
+    .collam h3::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color:rgb(248, 190, 1);
+        position: absolute;
+        bottom: 0;
+        left: 130px;
+        transition: 0.5s ease;
+    }
+
+}
+@media(max-width:768px){
+    .row{
+        flex-direction: column;
+
+    }
+    .collam{
+        margin: auto;
+        width: 50%;
+        margin-bottom: 20px;
+        text-align: center;
+     
+    }
+
+    .contact_details{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+    .collam h3:hover::after{
+        width: 18%; 
+        
+      }
+      .collam .link a:before{
+        content: '';
+        height: 16px;
+        width: 3px;
+        background-color:rgb(248, 190, 1);
+        position: absolute;
+        top: 0px;
+        left: 60px;
+        transition: 0.5s ease; 
+        opacity: 0;
+    } 
+    .collam h3::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background-color:rgb(248, 190, 1);
+        position: absolute;
+        bottom: 0;
+        left: 90px;
+        transition: 0.5s ease;
+    }
+
+}
